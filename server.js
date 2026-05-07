@@ -9,8 +9,8 @@ let todos = [
   { id: 1, text: "პირველი task", completed: false }
 ];
 
-app.get("/todos", (req, res) => {
-  res.json(todos);
+app.get("/", (req, res) => {
+  res.send("API is running");
 });
 
 app.post("/todos", (req, res) => {
